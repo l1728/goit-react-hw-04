@@ -20,6 +20,7 @@ const App = () => {
   const [error, setError] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
 
+  // Функція для отримання зображень з сервера за допомогою API Unsplash
   const fetchImages = useCallback(async () => {
     try {
       setLoading(true);
@@ -45,6 +46,7 @@ const App = () => {
     }
   }, [query, page]);
 
+  // Ефект для виклику функції fetchImages при зміні query або page
   useEffect(() => {
     if (query) {
       fetchImages();
