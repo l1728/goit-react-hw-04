@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   object-fit: cover;
+  border-radius: 8px;
 }
 .imageCard:hover {
   transform: scale(1.05);

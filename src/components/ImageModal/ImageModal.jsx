@@ -5,7 +5,6 @@ import Modal from 'react-modal';
 Modal.setAppElement('#root');
 
 const ImageModal = ({ isOpen, onRequestClose, image }) => {
-  if (!image) return null;
   return (
     <Modal
       isOpen={isOpen}
@@ -17,14 +16,14 @@ const ImageModal = ({ isOpen, onRequestClose, image }) => {
         &times;
       </button>
       <img
-        src={image.urls.regular}
-        alt={image.alt_description}
+        src={image?.urls?.regular}
+        alt={image?.alt_description}
         className={style.image}
       />
       <div className={style.info}>
-        <h2 className={style.descr}>{image.description || 'Untitled'}</h2>
-        <p className={style.text}>By: {image.user.name}</p>
-        <p className={style.text}>Likes: {image.likes}</p>
+        <h2 className={style.descr}>{image?.description || 'Untitled'}</h2>
+        <p className={style.text}>By: {image?.user?.name}</p>
+        <p className={style.text}>Likes: {image?.likes}</p>
       </div>
     </Modal>
   );

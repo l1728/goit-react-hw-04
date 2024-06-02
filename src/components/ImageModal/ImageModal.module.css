@@ -6,7 +6,7 @@
   width: 80%;
   max-width: 800px;
   max-height: 90%;
-  background-color: #fff;
+  background-color: #413f3f;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   outline: none;
@@ -30,13 +30,13 @@
 
 .closeButton {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   background: none;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: #333;
+  color: #201f1f;
 }
 
 .image {
@@ -54,10 +54,10 @@
 .descr {
   margin-bottom: 10px;
   font-size: 1.5rem;
-  color: #333;
+  color: #e9e3e3;
 }
 
 .text {
   font-size: 1rem;
-  color: #666;
+  color: #bbb5b5;
 }
