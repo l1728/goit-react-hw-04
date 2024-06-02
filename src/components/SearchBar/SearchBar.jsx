@@ -21,6 +21,7 @@ const SearchBar = ({ onSubmit }) => {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
+          id="searchInput"
           autoComplete="off"
           autoFocus
           placeholder="Search images and photos"
